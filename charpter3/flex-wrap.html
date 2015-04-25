@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>flex container的flex-wrap属性</title>
         <link rel="stylesheet" href="../stylesheets/charpter3.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
     </head>
     <body>
         <article>
@@ -12,6 +16,41 @@
                 <div class="flex-item">flex item 2</div>
                 <div class="flex-item">flex item 3</div>
                 <div class="flex-item">flex item 4</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">flex-wrap: nowrap;</label>
+            </section>
+        </article>
+        <article>
+            <h3>flex-wrap: wrap;</h3>
+            <section class="flex-container flex-wrap">
+                <div class="flex-item">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <label style="position: absolute;margin: 10px;bottom: 0;right: 0">固定高度的flex container，能容纳2层内容，flex-wrap: wrap;</label>
+            </section>
+            <section class="flex-container flex-wrap">
+                <div class="flex-item taller-item">flex item 1</div>
+                <div class="flex-item taller-item">flex item 2</div>
+                <div class="flex-item taller-item">flex item 3</div>
+                <div class="flex-item taller-item">flex item 4</div>
+                <label style="position: absolute;padding: 3px;bottom: 10px;right: 0;background-color: #ddd;border-radius: 10px;">固定高度的flex container，不能容纳2层内容，flex-wrap: wrap;</label>
+            </section>
+            <section class="flex-container flex-wrap auto-height">
+                <div class="flex-item taller-item">flex item 1</div>
+                <div class="flex-item taller-item">flex item 2</div>
+                <div class="flex-item taller-item">flex item 3</div>
+                <div class="flex-item taller-item">flex item 4</div>
+                <label style="position: absolute;padding: 3px;bottom: 10px;right: 0;background-color: #ddd;border-radius: 10px;">不固定高度的flex container，不能容纳2层内容，flex-wrap: wrap;</label>
+            </section>
+        </article>
+        <article>
+            <h3>flex-wrap: wrap-reverse;</h3>
+            <section class="flex-container flex-wrap-reverse">
+                <div class="flex-item">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <label style="position: absolute;margin: 10px;top: 0;right: 0">flex-wrap: wrap-reverse;</label>
             </section>
         </article>
     </body>
