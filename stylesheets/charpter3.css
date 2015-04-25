@@ -1,0 +1,22 @@
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 375px;
+  height: 400px;
+  position: relative;
+  background-color: #c40000;
+  color: #fff;
+}
+.flex-container .flex-item {
+  width: 150px;
+  height: 75px;
+  margin: 5px;
+  background-color: #fff;
+  color: #333;
+}
+.flex-container .larger-item {
+  height: 220px;
+}
+.auto-height {
+  height: auto;
+}
