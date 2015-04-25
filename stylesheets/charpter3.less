@@ -1,0 +1,32 @@
+//flex display
+.displayFlex() {
+    display: -webkit-flex;
+    display: flex;
+}
+
+//container of flex
+.flex-container {
+    .displayFlex();
+    width: 375px;
+    height: 400px;
+    position: relative;
+    background-color: #c40000;
+    color: #fff;
+    //item of flex
+    .flex-item {
+        width: 150px;
+        height: 75px;
+        margin: 5px;
+        background-color: #fff;
+        color: #333;
+    }
+    //larger item
+    .larger-item {
+        height: 220px;
+    }
+}
+
+//auto height
+.auto-height {
+    height: auto;
+}
