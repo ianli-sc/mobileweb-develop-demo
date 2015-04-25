@@ -1,0 +1,9 @@
+{
+    "name": "demo",
+    "version": "1.0.0",
+    "screenshot": "http://img.alicdn.com/tps/i3/TB1lMilHFXXXXbqXVXXhD65LpXX-500-405.jpg",
+    "devDependencies": {
+        "gulp": "3.x.x",
+        "gulp-less": "3.0.3"
+    }
+}

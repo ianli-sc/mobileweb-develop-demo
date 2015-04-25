@@ -1,0 +1,220 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.9
+3 info using node@v0.11.13
+4 warn package.json demo@1.0.0 No description
+5 warn package.json demo@1.0.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/ianli/git/mobileweb-develop-demo',
+7 verbose install   [ 'gulp', 'gulp-less' ] ]
+8 info preinstall demo@1.0.0
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'gulp@3.x.x', null ]
+11 verbose cache add name=undefined spec="gulp@3.x.x" args=["gulp@3.x.x",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'gulp@3.x.x',
+12 verbose parsed url   path: 'gulp@3.x.x',
+12 verbose parsed url   href: 'gulp@3.x.x' }
+13 verbose cache add name="gulp" spec="3.x.x" args=["gulp","3.x.x"]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: '3.x.x',
+14 verbose parsed url   path: '3.x.x',
+14 verbose parsed url   href: '3.x.x' }
+15 verbose addNamed [ 'gulp', '3.x.x' ]
+16 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+17 verbose cache add [ 'gulp-less@3.0.3', null ]
+18 verbose cache add name=undefined spec="gulp-less@3.0.3" args=["gulp-less@3.0.3",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'gulp-less@3.0.3',
+19 verbose parsed url   path: 'gulp-less@3.0.3',
+19 verbose parsed url   href: 'gulp-less@3.0.3' }
+20 verbose cache add name="gulp-less" spec="3.0.3" args=["gulp-less","3.0.3"]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: '3.0.3',
+21 verbose parsed url   path: '3.0.3',
+21 verbose parsed url   href: '3.0.3' }
+22 verbose addNamed [ 'gulp-less', '3.0.3' ]
+23 verbose addNamed [ '3.0.3', '3.0.3' ]
+24 silly lockFile c6d35e00-gulp-3-x-x gulp@3.x.x
+25 verbose lock gulp@3.x.x /Users/ianli/.npm/c6d35e00-gulp-3-x-x.lock
+26 silly lockFile 03003a96-gulp-less-3-0-3 gulp-less@3.0.3
+27 verbose lock gulp-less@3.0.3 /Users/ianli/.npm/03003a96-gulp-less-3-0-3.lock
+28 silly addNameRange { name: 'gulp', range: '>=3.0.0-0 <4.0.0-0', hasData: false }
+29 verbose url raw gulp
+30 verbose url resolving [ 'http://r.cnpmjs.org/', './gulp' ]
+31 verbose url resolved http://r.cnpmjs.org/gulp
+32 info trying registry request attempt 1 at 23:56:56
+33 http GET http://r.cnpmjs.org/gulp
+34 verbose url raw gulp-less
+35 verbose url resolving [ 'http://r.cnpmjs.org/', './gulp-less' ]
+36 verbose url resolved http://r.cnpmjs.org/gulp-less
+37 info trying registry request attempt 1 at 23:56:56
+38 http GET http://r.cnpmjs.org/gulp-less
+39 http 200 http://r.cnpmjs.org/gulp-less
+40 silly registry.get cb [ 200,
+40 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+40 silly registry.get     date: 'Sat, 25 Apr 2015 15:56:56 GMT',
+40 silly registry.get     'content-type': 'application/json; charset=utf-8',
+40 silly registry.get     'transfer-encoding': 'chunked',
+40 silly registry.get     connection: 'close',
+40 silly registry.get     'x-readtime': '23',
+40 silly registry.get     'content-encoding': 'gzip' } ]
+41 http 200 http://r.cnpmjs.org/gulp
+42 silly registry.get cb [ 200,
+42 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+42 silly registry.get     date: 'Sat, 25 Apr 2015 15:56:56 GMT',
+42 silly registry.get     'content-type': 'application/json; charset=utf-8',
+42 silly registry.get     'transfer-encoding': 'chunked',
+42 silly registry.get     connection: 'close',
+42 silly registry.get     'x-readtime': '46',
+42 silly registry.get     'content-encoding': 'gzip' } ]
+43 silly lockFile e43cfdfd-ess-download-gulp-less-3-0-3-tgz http://r.cnpmjs.org/gulp-less/download/gulp-less-3.0.3.tgz
+44 verbose lock http://r.cnpmjs.org/gulp-less/download/gulp-less-3.0.3.tgz /Users/ianli/.npm/e43cfdfd-ess-download-gulp-less-3-0-3-tgz.lock
+45 silly addNameRange number 2 { name: 'gulp', range: '>=3.0.0-0 <4.0.0-0', hasData: true }
+46 silly addNameRange versions [ 'gulp',
+46 silly addNameRange   [ '3.8.11',
+46 silly addNameRange     '3.8.10',
+46 silly addNameRange     '3.8.9',
+46 silly addNameRange     '3.8.8',
+46 silly addNameRange     '3.8.7',
+46 silly addNameRange     '3.8.6',
+46 silly addNameRange     '3.8.5',
+46 silly addNameRange     '3.8.4',
+46 silly addNameRange     '3.8.3',
+46 silly addNameRange     '3.8.2',
+46 silly addNameRange     '3.8.1',
+46 silly addNameRange     '3.8.0',
+46 silly addNameRange     '3.7.0',
+46 silly addNameRange     '3.6.2',
+46 silly addNameRange     '3.6.1',
+46 silly addNameRange     '3.6.0',
+46 silly addNameRange     '3.5.6',
+46 silly addNameRange     '3.5.5',
+46 silly addNameRange     '3.5.2',
+46 silly addNameRange     '3.5.1',
+46 silly addNameRange     '3.5.0',
+46 silly addNameRange     '3.4.0',
+46 silly addNameRange     '3.3.4',
+46 silly addNameRange     '3.3.2',
+46 silly addNameRange     '3.3.1',
+46 silly addNameRange     '3.3.0',
+46 silly addNameRange     '3.2.5',
+46 silly addNameRange     '3.2.4',
+46 silly addNameRange     '3.2.3',
+46 silly addNameRange     '3.2.2',
+46 silly addNameRange     '3.2.1',
+46 silly addNameRange     '3.2.0',
+46 silly addNameRange     '3.1.4',
+46 silly addNameRange     '3.1.3',
+46 silly addNameRange     '3.1.2',
+46 silly addNameRange     '3.1.1',
+46 silly addNameRange     '3.0.0',
+46 silly addNameRange     '2.7.0',
+46 silly addNameRange     '2.6.1',
+46 silly addNameRange     '2.6.0',
+46 silly addNameRange     '2.4.1',
+46 silly addNameRange     '2.4.0',
+46 silly addNameRange     '2.3.0',
+46 silly addNameRange     '2.2.0',
+46 silly addNameRange     '2.1.0',
+46 silly addNameRange     '2.0.1',
+46 silly addNameRange     '2.0.0',
+46 silly addNameRange     '1.2.1',
+46 silly addNameRange     '1.2.0',
+46 silly addNameRange     '1.1.0',
+46 silly addNameRange     '1.0.0',
+46 silly addNameRange     '0.2.0',
+46 silly addNameRange     '0.1.0',
+46 silly addNameRange     '0.0.9',
+46 silly addNameRange     '0.0.8',
+46 silly addNameRange     '0.0.7',
+46 silly addNameRange     '0.0.5',
+46 silly addNameRange     '0.0.4',
+46 silly addNameRange     '0.0.3',
+46 silly addNameRange     '0.0.2',
+46 silly addNameRange     '0.0.1' ] ]
+47 verbose addNamed [ 'gulp', '3.8.11' ]
+48 verbose addNamed [ '3.8.11', '3.8.11' ]
+49 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+50 verbose lock gulp@3.8.11 /Users/ianli/.npm/3d31ec08-gulp-3-8-11.lock
+51 verbose addRemoteTarball [ 'http://r.cnpmjs.org/gulp-less/download/gulp-less-3.0.3.tgz',
+51 verbose addRemoteTarball   '15ec6c49dc7a42d7558dc0e95b622d36dfc94e9f' ]
+52 info retry fetch attempt 1 at 23:56:56
+53 verbose fetch to= /var/folders/10/wngb3w197djcc__s8yr68k2w0000gn/T/npm-13219-ycGVGdAy/1429977416871-0.432987597072497/tmp.tgz
+54 http GET http://r.cnpmjs.org/gulp-less/download/gulp-less-3.0.3.tgz
+55 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+56 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+57 silly lockFile c6d35e00-gulp-3-x-x gulp@3.x.x
+58 silly lockFile c6d35e00-gulp-3-x-x gulp@3.x.x
+59 http 200 http://r.cnpmjs.org/gulp-less/download/gulp-less-3.0.3.tgz
+60 verbose tar unpack /var/folders/10/wngb3w197djcc__s8yr68k2w0000gn/T/npm-13219-ycGVGdAy/1429977416871-0.432987597072497/tmp.tgz
+61 silly lockFile 45a2183f-anli-npm-gulp-less-3-0-3-package tar:///Users/ianli/.npm/gulp-less/3.0.3/package
+62 verbose lock tar:///Users/ianli/.npm/gulp-less/3.0.3/package /Users/ianli/.npm/45a2183f-anli-npm-gulp-less-3-0-3-package.lock
+63 silly lockFile ffafc76c-416871-0-432987597072497-tmp-tgz tar:///var/folders/10/wngb3w197djcc__s8yr68k2w0000gn/T/npm-13219-ycGVGdAy/1429977416871-0.432987597072497/tmp.tgz
+64 verbose lock tar:///var/folders/10/wngb3w197djcc__s8yr68k2w0000gn/T/npm-13219-ycGVGdAy/1429977416871-0.432987597072497/tmp.tgz /Users/ianli/.npm/ffafc76c-416871-0-432987597072497-tmp-tgz.lock
+65 silly gunzTarPerm modes [ '755', '644' ]
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm extractEntry .npmignore
+68 silly gunzTarPerm extractEntry README.md
+69 silly gunzTarPerm extractEntry index.js
+70 silly gunzTarPerm extractEntry Changelog.md
+71 silly lockFile 45a2183f-anli-npm-gulp-less-3-0-3-package tar:///Users/ianli/.npm/gulp-less/3.0.3/package
+72 silly lockFile 45a2183f-anli-npm-gulp-less-3-0-3-package tar:///Users/ianli/.npm/gulp-less/3.0.3/package
+73 silly lockFile ffafc76c-416871-0-432987597072497-tmp-tgz tar:///var/folders/10/wngb3w197djcc__s8yr68k2w0000gn/T/npm-13219-ycGVGdAy/1429977416871-0.432987597072497/tmp.tgz
+74 silly lockFile ffafc76c-416871-0-432987597072497-tmp-tgz tar:///var/folders/10/wngb3w197djcc__s8yr68k2w0000gn/T/npm-13219-ycGVGdAy/1429977416871-0.432987597072497/tmp.tgz
+75 silly lockFile e43cfdfd-ess-download-gulp-less-3-0-3-tgz http://r.cnpmjs.org/gulp-less/download/gulp-less-3.0.3.tgz
+76 silly lockFile e43cfdfd-ess-download-gulp-less-3-0-3-tgz http://r.cnpmjs.org/gulp-less/download/gulp-less-3.0.3.tgz
+77 silly lockFile 03003a96-gulp-less-3-0-3 gulp-less@3.0.3
+78 silly lockFile 03003a96-gulp-less-3-0-3 gulp-less@3.0.3
+79 error Error: EACCES, open '/Users/ianli/.npm/gulp-less/3.0.3/package.tgz'
+79 error     at Error (native)
+79 error  { [Error: EACCES, open '/Users/ianli/.npm/gulp-less/3.0.3/package.tgz']
+79 error   stack: 'Error: EACCES, open \'/Users/ianli/.npm/gulp-less/3.0.3/package.tgz\'\n    at Error (native)',
+79 error   errno: -13,
+79 error   code: 'EACCES',
+79 error   path: '/Users/ianli/.npm/gulp-less/3.0.3/package.tgz',
+79 error   parent: 'demo' }
+80 error Please try running this command again as root/Administrator.
+81 error System Darwin 14.3.0
+82 error command "node" "/usr/local/bin/npm" "install"
+83 error cwd /Users/ianli/git/mobileweb-develop-demo
+84 error node -v v0.11.13
+85 error npm -v 1.4.9
+86 error path /Users/ianli/.npm/gulp-less/3.0.3/package.tgz
+87 error code EACCES
+88 error errno -13
+89 error stack Error: EACCES, open '/Users/ianli/.npm/gulp-less/3.0.3/package.tgz'
+89 error stack     at Error (native)
+90 verbose exit [ -13, true ]
