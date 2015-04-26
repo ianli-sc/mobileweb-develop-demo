@@ -25,3 +25,12 @@
 .flex-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
