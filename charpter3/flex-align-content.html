@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>flex container的align-content属性</title>
+        <link rel="stylesheet" href="../stylesheets/charpter3.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    </head>
+    <body>
+        <article>
+            <h3>align-content: flex-start;</h3>
+            <section class="flex-container flex-wrap">
+                <div class="flex-item">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <div class="flex-item">flex item 5</div>
+                <div class="flex-item">flex item 6</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">align-content: flex-start;</label>
+            </section>
+        </article>
+        <article>
+            <h3>align-content: flex-end;</h3>
+            <section class="flex-container flex-wrap flex-align-content-flex-end">
+                <div class="flex-item">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <div class="flex-item">flex item 5</div>
+                <div class="flex-item">flex item 6</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">align-content: flex-end;</label>
+            </section>
+        </article>
+        <article>
+            <h3>align-content: center;</h3>
+            <section class="flex-container flex-wrap flex-align-content-center">
+                <div class="flex-item">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <div class="flex-item">flex item 5</div>
+                <div class="flex-item">flex item 6</div>
+                <label style="position: absolute;margin: 10px;bottom: 0px;right: 0">align-content: center;</label>
+            </section>
+        </article>
+        <article>
+            <h3>align-content: space-between;</h3>
+            <section class="flex-container flex-wrap flex-align-content-space-between">
+                <div class="flex-item">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <div class="flex-item">flex item 5</div>
+                <div class="flex-item">flex item 6</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">align-content: space-between;</label>
+            </section>
+        </article>
+        <article>
+            <h3>align-content: space-around;</h3>
+            <section class="flex-container flex-wrap flex-align-content-space-around">
+                <div class="flex-item">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <div class="flex-item">flex item 5</div>
+                <div class="flex-item">flex item 6</div>
+                <label style="position: absolute;margin: 10px;bottom: 0;right: 0">align-content: space-around;</label>
+            </section>
+        </article>
+        <article>
+            <h3>align-content: stretch;</h3>
+            <section class="flex-container auto-height flex-wrap flex-align-content-stretch">
+                <div class="flex-item taller-item">flex item 1</div>
+                <div class="flex-item taller-item">flex item 2</div>
+                <div class="flex-item taller-item">flex item 3</div>
+                <div class="flex-item taller-item">flex item 4</div>
+                <label style="position: absolute;padding: 3px;bottom: 10px;right: 0;background-color: #ddd;border-radius: 10px;">不固定高度的flex container，不能容纳2层内容，flex-wrap: wrap;</label>
+            </section>
+        </article>
+    </body>
+</html>
