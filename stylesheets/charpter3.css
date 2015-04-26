@@ -46,3 +46,24 @@
 .flex-justify-content-space-around {
   justify-content: space-around;
 }
+.flex-align-items-flex-start {
+  align-items: flex-start;
+}
+.flex-align-items-flex-end {
+  align-items: flex-end;
+}
+.flex-align-items-center {
+  align-items: center;
+}
+.flex-align-items-baseline {
+  align-items: baseline;
+}
+.flex-align-items-baseline .flex-item {
+  text-decoration: underline;
+}
+.flex-align-items-stretch {
+  align-items: stretch;
+}
+.larger-font {
+  font-size: 2em;
+}
