@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>flex item的align-self属性</title>
+        <link rel="stylesheet" href="../stylesheets/charpter3.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    </head>
+    <body>
+        <article>
+            <h3>align-items: flex-end;align-self: auto;</h3>
+            <section class="flex-container flex-align-items-flex-end">
+                <div class="flex-item">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">align-items: flex-end;align-items: auto;设置为auto时，完全受flex container控制</label>
+            </section>
+        </article>
+        <article>
+            <h3>align-items: flex-end;align-self: flex-start;</h3>
+            <section class="flex-container flex-align-items-flex-end">
+                <div class="flex-item flex-align-self-flex-start">flex item 1</div>
+                <div class="flex-item">flex item 2</div>
+                <div class="flex-item">flex item 3</div>
+                <div class="flex-item">flex item 4</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">flex container设置为align-items: flex-end; 第一个flex item重置align-items: flex-start;</label>
+            </section>
+        </article>
+    </body>
+</html>

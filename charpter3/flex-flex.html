@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>flex item的flex混合属性</title>
+        <link rel="stylesheet" href="../stylesheets/charpter3.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    </head>
+    <body>
+        <article>
+            <h3>flex: none;</h3>
+            <section class="flex-container">
+                <div class="flex-item shorter-item flex-flex-none">flex item 1</div>
+                <div class="flex-item shorter-item">flex item 2</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">flex: none;等价于flex: 0 0 auto;</label>
+            </section>
+        </article>
+        <article>
+            <h3>flex: 2 2 auto和flex: 1 1 auto;</h3>
+            <section class="flex-container">
+                <div class="flex-item shorter-item flex-flex-22auto">flex item 1</div>
+                <div class="flex-item shorter-item flex-flex-11auto">flex item 2</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">当存在空白为x时，第一个flex item所占空白比例为x / (2 + 1) * 2，第二个flex item所占x / (2 + 1) * 1</label>
+            </section>
+        </article>
+        <article>
+            <h3>flex: 2 1 auto和flex: 1 1 auto;</h3>
+            <section class="flex-container">
+                <div class="flex-item shorter-item flex-flex-22auto">flex item 1</div>
+                <div class="flex-item shorter-item flex-flex-11auto">flex item 2</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">当存在空白为x时，第一个flex item所占空白比例为x / (2 + 1) * 2，第二个flex item所占x / (2 + 1) * 1。当宽度低于flex item1和flex item2的总和y时，第一个元素压缩y / (2+1) * 2，第二个元素压缩y / (2+1) *1，可以缩小屏幕查看该效果</label>
+            </section>
+        </article>
+        <article>
+            <h3>flex: 1 1 175px;和flex: 1 1 100px;</h3>
+            <section class="flex-container">
+                <div class="flex-item shorter-item noMargin-withBorder flex-flex-22175">flex item 1</div>
+                <div class="flex-item shorter-item noMargin-withBorder flex-flex-11100">flex item 2</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">当页面宽度375px时，如果flex-basis设置为auto，剩余宽度x为375 - item1宽度 - item2宽度。如果flex-basis有赋值，那么剩余宽度变成375 - item1的flex-basis - item2 的flex。剩余宽度的x赋值变化，导致伸缩的比例计算会受影响。本例，当宽度为375px时，剩余宽度x为375 - 175 - 100 = 100。那么item2扩到100（flex-basis宽度） + 100 / (2 + 1) * 1,item1扩大到175（flex-basis宽度） + 100 / (2 + 1) * 2</label>
+            </section>
+        </article>
+        <article>
+            <h3>flex: 1 1 0;</h3>
+            <section class="flex-container">
+                <div class="flex-item shorter-item noMargin-withBorder flex-flex-22175">flex item 1</div>
+                <div class="flex-item shorter-item noMargin-withBorder flex-flex-11100">flex item 2</div>
+                <label style="position: absolute;margin: 10px;top: 80px;right: 0">flex-basis设置为0时，</label>
+            </section>
+        </article>
+    </body>
+</html>
